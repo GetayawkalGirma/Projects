@@ -1,0 +1,92 @@
+*{
+    margin:0;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* Header */
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items:center;
+}
+/* This selector targets all <a> (anchor/link) elements that are inside any element with the class header. */
+.header a{
+    margin-right: 20px;
+    /* THIS MAKES BLUE LINKS DISAPPEAR  */
+    color:rgba(0,0,0,0.87);
+    font-size: 15px;
+     text-decoration: inherit;  /* THIS MAKES UNDERLINES IN LINKS DISAPPEAR*/
+    }
+.header a:hover{
+    text-decoration: underline;
+}
+
+.header.right{
+    display: flex;
+    align-items: center;
+    min-width:13vw;
+    justify-content: space-between;
+}
+.header.header__apps{
+    margin-right: 10px;
+}
+.mainBody{
+    flex:1;
+    display:flex;
+    margin-top: 12%;
+    flex-direction: column;
+}
+.mainBody img{
+    object-fit: contain;
+    height: 100px;
+}
+.search_input{
+    display:flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding:10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+}
+.search_input input{
+    flex:1;
+    padding: 10px 20px;
+    border:none;
+    outline:none;
+}
+.search_input .material-symbols-outlined {
+    color: gray;
+}
+.search_buttons{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+}
+.search_buttons button {
+    margin: 0 4px; /* Adjust margins to better align with Google’s spacing */
+    padding: 10px 20px; /* Adjust padding for a more similar button size */
+    background-color: #f8f8f8; /* Google's default button background color */
+    border: 1px solid #dcdcdc; /* Google’s button border color */
+    border-radius: 12px; /* Slightly rounded corners */
+    font-size: 14px; /* Match Google’s font size */
+    font-family: Arial, sans-serif; /* Use Arial or similar sans-serif font */
+    cursor: pointer; /* Pointer cursor for clickable effect */
+    color: #5f6368; /* Match Google’s button text color */
+    outline: none; /* Remove outline */
+}
+
+.search_buttons button:hover {
+    background-color: #f1f1f1; /* Slightly darker on hover */
+}
+
+.search_buttons button:active {
+    background-color: #e8e8e8; /* Even darker on click */
+}
